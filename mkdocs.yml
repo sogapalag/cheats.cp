@@ -1,0 +1,75 @@
+site_name: cheats.cp
+site_description: Cheat sheets of competitive programming.
+site_author: Zhaopeng Yan
+
+repo_name: 'sogapalag/cheats.cp'
+repo_url: 'https://github.com/sogapalag/cheats.cp'
+
+nav:
+  - Introduction:
+      - Intro: index.md
+  - Data Structure:
+      - Treap: ds/treap.md
+  - String:
+      - Suffix array: string/suffix_array.md
+  - Math:
+      - Extended gcd: math/exgcd.md
+      - Chinese remainder theorem: math/crt.md
+      - Sieve: math/sieve.md
+
+
+theme:
+  name: material
+  palette:
+    primary: 'white'
+    accent: 'pink'
+  icon:
+    logo: material/school
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+  font:
+    text: 'Fira Sans'
+    code: 'Fira Code'
+  include_search_page: false
+  search_index_only: true  
+
+extra_javascript:
+  #- javascripts/config.js
+  #- https://polyfill.io/v3/polyfill.min.js?features=es6
+  #- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - 'https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.arithmatex
+  - pymdownx.superfences:
+      custom_fences:
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
