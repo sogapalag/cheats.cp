@@ -16,6 +16,7 @@ nav:
       - Extended gcd: math/exgcd.md
       - Chinese remainder theorem: math/crt.md
       - Sieve: math/sieve.md
+      - Discrete fourier transform: math/dft.md
 
 
 theme:
