@@ -13,19 +13,19 @@
         <meta name="author" content="Zhaopeng Yan">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.4">
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
     
     
       
-        <title>Extended gcd - cheats.cp</title>
+        <title>Sieve - cheats.cp</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.bde7dde4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ca7ac06f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
         
           
           
@@ -46,6 +46,8 @@
     
     
       
+
+
     
     
   </head>
@@ -59,12 +61,17 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="pink">
   
     
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#linear" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -73,7 +80,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="cheats.cp" class="md-header__button md-logo" aria-label="cheats.cp" data-md-component="logo">
+    <a href=".." title="cheats.cp" class="md-header__button md-logo" aria-label="cheats.cp" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
@@ -92,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Extended gcd
+              Sieve
             
           </span>
         </div>
@@ -166,7 +173,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../index.html" class="md-tabs__link">
         Introduction
       </a>
     </li>
@@ -182,7 +189,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../ds/treap/" class="md-tabs__link">
+      <a href="../ds/treap.html" class="md-tabs__link">
         Data Structure
       </a>
     </li>
@@ -198,7 +205,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../string/suffix_array/" class="md-tabs__link">
+      <a href="../string/suffix_array.html" class="md-tabs__link">
         String
       </a>
     </li>
@@ -216,7 +223,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="exgcd.html" class="md-tabs__link md-tabs__link--active">
         Math
       </a>
     </li>
@@ -243,7 +250,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="cheats.cp" class="md-nav__button md-logo" aria-label="cheats.cp" data-md-component="logo">
+    <a href=".." title="cheats.cp" class="md-nav__button md-logo" aria-label="cheats.cp" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
@@ -296,7 +303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         Intro
       </a>
     </li>
@@ -338,7 +345,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ds/treap/" class="md-nav__link">
+      <a href="../ds/treap.html" class="md-nav__link">
         Treap
       </a>
     </li>
@@ -380,7 +387,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string/suffix_array/" class="md-nav__link">
+      <a href="../string/suffix_array.html" class="md-nav__link">
         Suffix array
       </a>
     </li>
@@ -422,19 +429,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="exgcd.html" class="md-nav__link">
         Extended gcd
       </a>
-      
     </li>
   
 
@@ -444,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../crt/" class="md-nav__link">
+      <a href="crt.html" class="md-nav__link">
         Chinese remainder theorem
       </a>
     </li>
@@ -454,10 +453,105 @@
             
   
   
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Sieve
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="sieve.html" class="md-nav__link md-nav__link--active">
+        Sieve
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linear" class="md-nav__link">
+    Linear
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prefix-of-multiplicative-functions" class="md-nav__link">
+    Prefix of multiplicative functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Prefix of multiplicative functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#on-prime-factorization" class="md-nav__link">
+    On prime factorization
+  </a>
+  
+    <nav class="md-nav" aria-label="On prime factorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zhou" class="md-nav__link">
+    Zhou
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#min_25" class="md-nav__link">
+    Min_25
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meissellehmer" class="md-nav__link">
+    Meissel–Lehmer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
   
     <li class="md-nav__item">
-      <a href="../sieve/" class="md-nav__link">
-        Sieve
+      <a href="dft.html" class="md-nav__link">
+        Discrete fourier transform
       </a>
     </li>
   
@@ -476,24 +570,167 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#linear" class="md-nav__link">
+    Linear
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prefix-of-multiplicative-functions" class="md-nav__link">
+    Prefix of multiplicative functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Prefix of multiplicative functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#on-prime-factorization" class="md-nav__link">
+    On prime factorization
+  </a>
+  
+    <nav class="md-nav" aria-label="On prime factorization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zhou" class="md-nav__link">
+    Zhou
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#min_25" class="md-nav__link">
+    Min_25
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meissellehmer" class="md-nav__link">
+    Meissel–Lehmer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/sogapalag/cheats.cp/edit/master/docs/math/exgcd.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/sogapalag/cheats.cp/edit/master/docs/math/sieve.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Extended gcd</h1>
+                  <h1>Sieve</h1>
                 
-                <p>Solve <span><span class="MathJax_Preview">ax+by = \gcd(a,b)</span><script type="math/tex">ax+by = \gcd(a,b)</script></span>.</p>
-<p>With implicitly knowing solution <span><span class="MathJax_Preview">bx' + (a \mod b)y' = g</span><script type="math/tex">bx' + (a \mod b)y' = g</script></span>, and with <span><span class="MathJax_Preview">a\mod b = a - \lfloor\dfrac{a}{b}\rfloor b</span><script type="math/tex">a\mod b = a - \lfloor\dfrac{a}{b}\rfloor b</script></span>. Rearrange coefficients:</p>
+                <h2 id="linear">Linear<a class="headerlink" href="#linear" title="Permanent link">&para;</a></h2>
+<p>Break when hit least prime factor.</p>
+<p><strong>Claim.</strong> Each composite sieved once corresponding to its least prime.</p>
+<p><a href="https://en.wikipedia.org/wiki/Multiplicative_function">Multiplicative function</a>: <span><span class="MathJax_Preview">f(mn) = f(m)f(n)</span><script type="math/tex">f(mn) = f(m)f(n)</script></span>, for coprime <span><span class="MathJax_Preview">m,n</span><script type="math/tex">m,n</script></span>.</p>
+<table>
+<thead>
+<tr>
+<th><span><span class="MathJax_Preview">f(ip)</span><script type="math/tex">f(ip)</script></span></th>
+<th><span><span class="MathJax_Preview">\phi</span><script type="math/tex">\phi</script></span></th>
+<th><span><span class="MathJax_Preview">\mu</span><script type="math/tex">\mu</script></span></th>
+<th><span><span class="MathJax_Preview">\sigma_k</span><script type="math/tex">\sigma_k</script></span></th>
+<th><span><span class="MathJax_Preview">e_k</span><script type="math/tex">e_k</script></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span><span class="MathJax_Preview">p\nmid i</span><script type="math/tex">p\nmid i</script></span></td>
+<td><span><span class="MathJax_Preview">(p-1)\phi(i)</span><script type="math/tex">(p-1)\phi(i)</script></span></td>
+<td><span><span class="MathJax_Preview">-\mu(i)</span><script type="math/tex">-\mu(i)</script></span></td>
+<td><span><span class="MathJax_Preview">(1+p^k)\sigma_k(i)</span><script type="math/tex">(1+p^k)\sigma_k(i)</script></span></td>
+<td><span><span class="MathJax_Preview">1+p^k</span><script type="math/tex">1+p^k</script></span></td>
+</tr>
+<tr>
+<td><span><span class="MathJax_Preview">p\mid i</span><script type="math/tex">p\mid i</script></span></td>
+<td><span><span class="MathJax_Preview">p\phi(i)</span><script type="math/tex">p\phi(i)</script></span></td>
+<td><span><span class="MathJax_Preview">0</span><script type="math/tex">0</script></span></td>
+<td><span><span class="MathJax_Preview">\sigma_k(i) e_k(ip)/e_k(i)</span><script type="math/tex">\sigma_k(i) e_k(ip)/e_k(i)</script></span></td>
+<td><span><span class="MathJax_Preview">1 + e_k(i)*p^k</span><script type="math/tex">1 + e_k(i)*p^k</script></span></td>
+</tr>
+</tbody>
+</table>
+<p>Where <span><span class="MathJax_Preview">e_{k,p}(p^c) = 1 + p^k + p^{2k} + \cdots + p^{ck}</span><script type="math/tex">e_{k,p}(p^c) = 1 + p^k + p^{2k} + \cdots + p^{ck}</script></span>, a non-multy helper function.</p>
+<p>Thus we can build above functions in linear time.</p>
+<h2 id="prefix-of-multiplicative-functions">Prefix of multiplicative functions<a class="headerlink" href="#prefix-of-multiplicative-functions" title="Permanent link">&para;</a></h2>
+<p><strong>Usage.</strong> Find <span><span class="MathJax_Preview">F(n)=\sum f(i)</span><script type="math/tex">F(n)=\sum f(i)</script></span>.</p>
+<p><a href="https://en.wikipedia.org/wiki/Dirichlet_convolution#Dirichlet_ring">Dirichlet ring</a>.
+<a href="https://en.wikipedia.org/wiki/Divisor_sum_identities">Divisor sum identities</a>.</p>
+<p>When <span><span class="MathJax_Preview">f*g</span><script type="math/tex">f*g</script></span> is easy to calculate:</p>
 <div>
-<div class="MathJax_Preview"> \Rightarrow x = y', y = x' - y'\cdot \lfloor\dfrac{a}{b}\rfloor </div>
-<script type="math/tex; mode=display"> \Rightarrow x = y', y = x' - y'\cdot \lfloor\dfrac{a}{b}\rfloor </script>
+<div class="MathJax_Preview">\begin{align}
+\sum_{i=1}^n (f*g)(i) = \sum_{i=1}^n F\left(\left\lfloor \dfrac{n}{i} \right\rfloor\right) g(i)  \\\\
+\Rightarrow F(n) \sim (F\left(\left\lfloor \dfrac{n}{2} \right\rfloor\right),\cdots)
+\end{align}</div>
+<script type="math/tex; mode=display">\begin{align}
+\sum_{i=1}^n (f*g)(i) = \sum_{i=1}^n F\left(\left\lfloor \dfrac{n}{i} \right\rfloor\right) g(i)  \\\\
+\Rightarrow F(n) \sim (F\left(\left\lfloor \dfrac{n}{2} \right\rfloor\right),\cdots)
+\end{align}</script>
 </div>
+<h3 id="on-prime-factorization">On prime factorization<a class="headerlink" href="#on-prime-factorization" title="Permanent link">&para;</a></h3>
+<p>Implicitly ignore <span><span class="MathJax_Preview">f(i=1)=1</span><script type="math/tex">f(i=1)=1</script></span>.</p>
+<p><strong>Usage.</strong> Find <span><span class="MathJax_Preview">F</span><script type="math/tex">F</script></span> when <span><span class="MathJax_Preview">f(p^c)</span><script type="math/tex">f(p^c)</script></span> easy to calculate.</p>
+<p><strong>Notation.</strong> <span><span class="MathJax_Preview">p_1=2,p_2=3,p_3=5,...</span><script type="math/tex">p_1=2,p_2=3,p_3=5,...</script></span>; <span><span class="MathJax_Preview">p_s = \max \{p: p \leq \sqrt{n} \}</span><script type="math/tex">p_s = \max \{p: p \leq \sqrt{n} \}</script></span>.</p>
+<p><strong>Define.</strong> <span><span class="MathJax_Preview">S_k = \{x: p_i\nmid x, \forall i\leq k\}</span><script type="math/tex">S_k = \{x: p_i\nmid x, \forall i\leq k\}</script></span>. i.e. remain number sieved after first <span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span> primes.
+$$ [n] = S_0 \supset S_1 = {\text{odd number}} \supset S_2 \supset \cdots S_s = \{ p: p &gt; \sqrt{n} \} $$</p>
+<h4 id="zhou"><a href="https://oi-wiki.org/math/zhou/">Zhou</a><a class="headerlink" href="#zhou" title="Permanent link">&para;</a></h4>
+<p>Let <span><span class="MathJax_Preview">F_k(n) = \sum_{i\in S_k} f(i)</span><script type="math/tex">F_k(n) = \sum_{i\in S_k} f(i)</script></span>. Recurrence relation:
+\begin{align}
+    F(n) &amp;= F_0(n) = \sum_i f(i) \\
+    F_k(n) &amp;= F_{k-1}(n) - f(p_k) F_{k-1} \left(\left\lfloor \dfrac{n}{p_k}  \right\rfloor\right) \\
+    &amp;= \begin{cases} F_{k-1}(n),  p_k^2 &gt; n  \\  \cdots  \end{cases}
+\end{align}
+Thus we can calculate
+$$ \sum_{\exists p &gt; \sqrt{n}, p\mid i} f(i) = \sum_{i=1}^{\sqrt{n}} f(i)F_{s}\left(\left\lfloor\dfrac{n}{i} \right\rfloor \right) $$
+Similarily we can define <span><span class="MathJax_Preview">H_k(n)= \sum_{i \sim (p_k..p_s]} f(i)</span><script type="math/tex">H_k(n)= \sum_{i \sim (p_k..p_s]} f(i)</script></span>, to calculate remain part.</p>
+<h4 id="min_25"><a href="https://oi-wiki.org/math/min-25/">Min_25</a><a class="headerlink" href="#min_25" title="Permanent link">&para;</a></h4>
+<p><strong>Usage.</strong> Count number of primes, <span><span class="MathJax_Preview">\pi(n)</span><script type="math/tex">\pi(n)</script></span>.</p>
+<p>Let <span><span class="MathJax_Preview">G_k(n) = \sum_{S_k \cup P} g(i)</span><script type="math/tex">G_k(n) = \sum_{S_k \cup P} g(i)</script></span>. Similarily:
+$$
+    G_k(n) = G_{k-1}(n) - g(p_k) \left(G_{k-1} \left(\left\lfloor \dfrac{n}{p_k}  \right\rfloor\right)  - G_{k-1}(p_{k-1}) \right)
+$$
+Set <span><span class="MathJax_Preview">g=1</span><script type="math/tex">g=1</script></span>, thus <span><span class="MathJax_Preview">\pi(n) = G_s(n)</span><script type="math/tex">\pi(n) = G_s(n)</script></span>.</p>
+<h4 id="meissellehmer"><a href="https://en.wikipedia.org/wiki/Prime-counting_function#The_Meissel%E2%80%93Lehmer_algorithm">Meissel–Lehmer</a><a class="headerlink" href="#meissellehmer" title="Permanent link">&para;</a></h4>
                 
               
               
@@ -512,7 +749,8 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../../string/suffix_array/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="crt.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Chinese remainder theorem" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -521,19 +759,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Suffix array
+              Chinese remainder theorem
             </div>
           </div>
         </a>
       
       
-        <a href="../crt/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="dft.html" class="md-footer__link md-footer__link--next" aria-label="Next: Discrete fourier transform" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Chinese remainder theorem
+              Discrete fourier transform
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -562,10 +801,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.4fa0e4ee.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.1d3bfcf1.min.js"></script>
+      <script src="../assets/javascripts/bundle.82b56eb2.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       

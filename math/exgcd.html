@@ -13,19 +13,19 @@
         <meta name="author" content="Zhaopeng Yan">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.4">
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
     
     
       
-        <title>Chinese remainder theorem - cheats.cp</title>
+        <title>Extended gcd - cheats.cp</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.bde7dde4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ca7ac06f.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ef6f36e2.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
         
           
           
@@ -46,6 +46,8 @@
     
     
       
+
+
     
     
   </head>
@@ -59,17 +61,12 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="white" data-md-color-accent="pink">
   
     
-    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#extended-crt" class="md-skip">
-          Skip to content
-        </a>
       
     </div>
     <div data-md-component="announce">
@@ -78,7 +75,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="cheats.cp" class="md-header__button md-logo" aria-label="cheats.cp" data-md-component="logo">
+    <a href=".." title="cheats.cp" class="md-header__button md-logo" aria-label="cheats.cp" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
@@ -97,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Chinese remainder theorem
+              Extended gcd
             
           </span>
         </div>
@@ -171,7 +168,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../index.html" class="md-tabs__link">
         Introduction
       </a>
     </li>
@@ -187,7 +184,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../ds/treap/" class="md-tabs__link">
+      <a href="../ds/treap.html" class="md-tabs__link">
         Data Structure
       </a>
     </li>
@@ -203,7 +200,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../string/suffix_array/" class="md-tabs__link">
+      <a href="../string/suffix_array.html" class="md-tabs__link">
         String
       </a>
     </li>
@@ -221,7 +218,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../exgcd/" class="md-tabs__link md-tabs__link--active">
+      <a href="exgcd.html" class="md-tabs__link md-tabs__link--active">
         Math
       </a>
     </li>
@@ -248,7 +245,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="cheats.cp" class="md-nav__button md-logo" aria-label="cheats.cp" data-md-component="logo">
+    <a href=".." title="cheats.cp" class="md-nav__button md-logo" aria-label="cheats.cp" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
@@ -301,7 +298,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         Intro
       </a>
     </li>
@@ -343,7 +340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../ds/treap/" class="md-nav__link">
+      <a href="../ds/treap.html" class="md-nav__link">
         Treap
       </a>
     </li>
@@ -385,7 +382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../string/suffix_array/" class="md-nav__link">
+      <a href="../string/suffix_array.html" class="md-nav__link">
         Suffix array
       </a>
     </li>
@@ -427,18 +424,6 @@
             
   
   
-  
-    <li class="md-nav__item">
-      <a href="../exgcd/" class="md-nav__link">
-        Extended gcd
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
     
   
   
@@ -448,37 +433,9 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Chinese remainder theorem
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Chinese remainder theorem
+      <a href="exgcd.html" class="md-nav__link md-nav__link--active">
+        Extended gcd
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#extended-crt" class="md-nav__link">
-    Extended crt
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -489,8 +446,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../sieve/" class="md-nav__link">
+      <a href="crt.html" class="md-nav__link">
+        Chinese remainder theorem
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sieve.html" class="md-nav__link">
         Sieve
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dft.html" class="md-nav__link">
+        Discrete fourier transform
       </a>
     </li>
   
@@ -509,55 +490,24 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#extended-crt" class="md-nav__link">
-    Extended crt
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/sogapalag/cheats.cp/edit/master/docs/math/crt.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/sogapalag/cheats.cp/edit/master/docs/math/exgcd.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Chinese remainder theorem</h1>
+                  <h1>Extended gcd</h1>
                 
-                <p>Solve <span><span class="MathJax_Preview">a</span><script type="math/tex">a</script></span> for <span><span class="MathJax_Preview">a \equiv a_i (\mod p_i)</span><script type="math/tex">a \equiv a_i (\mod p_i)</script></span>, coprime <span><span class="MathJax_Preview">\gcd(p_i,p_j)=1, \forall i,j</span><script type="math/tex">\gcd(p_i,p_j)=1, \forall i,j</script></span>.</p>
-<p><strong>Claim 1.</strong> <span><span class="MathJax_Preview">\exists</span><script type="math/tex">\exists</script></span> unique <span><span class="MathJax_Preview">a (\mod P)</span><script type="math/tex">a (\mod P)</script></span>, where <span><span class="MathJax_Preview">P = \prod p_i</span><script type="math/tex">P = \prod p_i</script></span>.</p>
-<p><strong>Claim 2.</strong> <span><span class="MathJax_Preview">a = \sum a_ib_ib_i'</span><script type="math/tex">a = \sum a_ib_ib_i'</script></span>, where <span><span class="MathJax_Preview">b_i = P/p_i</span><script type="math/tex">b_i = P/p_i</script></span>, <span><span class="MathJax_Preview">b_i' = b_i^{-1} (\mod p_i)</span><script type="math/tex">b_i' = b_i^{-1} (\mod p_i)</script></span>.</p>
-<h2 id="extended-crt">Extended crt<a class="headerlink" href="#extended-crt" title="Permanent link">&para;</a></h2>
-<p>Fold with start <span><span class="MathJax_Preview">(0,1)</span><script type="math/tex">(0,1)</script></span>, <span><span class="MathJax_Preview">(a,p)</span><script type="math/tex">(a,p)</script></span> by next <span><span class="MathJax_Preview">(a_1,p_1)</span><script type="math/tex">(a_1,p_1)</script></span>.</p>
-<p><strong>Claim.</strong> <span><span class="MathJax_Preview">a := a + p p' \dfrac{a_1-a}{\gcd(p,p_1)}</span><script type="math/tex">a := a + p p' \dfrac{a_1-a}{\gcd(p,p_1)}</script></span>, when <span><span class="MathJax_Preview">a_1-a \equiv 0(\mod g)</span><script type="math/tex">a_1-a \equiv 0(\mod g)</script></span>.</p>
-<p><strong>Proof.</strong> Replace <span><span class="MathJax_Preview">pp'=g-p_1p_1'</span><script type="math/tex">pp'=g-p_1p_1'</script></span>, result symmetry form <span><span class="MathJax_Preview">a_1 + (0 \mod p_1)</span><script type="math/tex">a_1 + (0 \mod p_1)</script></span>.</p>
+                <p>Solve <span><span class="MathJax_Preview">ax+by = \gcd(a,b)</span><script type="math/tex">ax+by = \gcd(a,b)</script></span>.</p>
+<p>With implicitly knowing solution <span><span class="MathJax_Preview">bx' + (a \mod b)y' = g</span><script type="math/tex">bx' + (a \mod b)y' = g</script></span>, and with <span><span class="MathJax_Preview">a\mod b = a - \lfloor\dfrac{a}{b}\rfloor b</span><script type="math/tex">a\mod b = a - \lfloor\dfrac{a}{b}\rfloor b</script></span>. Rearrange coefficients:</p>
+<div>
+<div class="MathJax_Preview"> \Rightarrow x = y', y = x' - y'\cdot \lfloor\dfrac{a}{b}\rfloor </div>
+<script type="math/tex; mode=display"> \Rightarrow x = y', y = x' - y'\cdot \lfloor\dfrac{a}{b}\rfloor </script>
+</div>
                 
               
               
@@ -576,7 +526,8 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../exgcd/" class="md-footer__link md-footer__link--prev" rel="prev">
+        
+        <a href="../string/suffix_array.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Suffix array" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -585,19 +536,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Extended gcd
+              Suffix array
             </div>
           </div>
         </a>
       
       
-        <a href="../sieve/" class="md-footer__link md-footer__link--next" rel="next">
+        
+        <a href="crt.html" class="md-footer__link md-footer__link--next" aria-label="Next: Chinese remainder theorem" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Sieve
+              Chinese remainder theorem
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -626,10 +578,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../../assets/javascripts/workers/search.4fa0e4ee.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.1d3bfcf1.min.js"></script>
+      <script src="../assets/javascripts/bundle.82b56eb2.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
